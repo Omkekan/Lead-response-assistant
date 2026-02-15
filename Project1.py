@@ -2,7 +2,7 @@ import requests
 import json
 
 # Your GitHub Personal Access Token (PAT)
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = "GitHub Token"
 headers = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
 # The endpoint for GitHub's chat completions
 # This example uses Llama-3-70b-Instruct, which is excellent for your task
@@ -44,4 +44,5 @@ def generate_reply(user_query):
 # User Input
 user_input = input("Enter your Query: ")
 print("\n--- AI Response ---\n")
+
 print(generate_reply(user_input))
